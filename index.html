@@ -297,9 +297,9 @@
            3. Replace TALLY_FORM_ID in the two places below
            4. Delete the <div id="form-body"> fallback below this block
            ──────────────────────────────────────────────────── -->
-      <div id="tally-embed" style="display:none">
+      <div id="tally-embed" style="display:block">
         <iframe
-          data-tally-src="https://tally.so/embed/TALLY_FORM_ID?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+          data-tally-src="https://tally.so/embed/rjpkoR?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
           loading="lazy" width="100%" height="600" frameborder="0"
           style="border:none;width:100%;min-height:500px"
           title="AestheticSim Beta Interest Form"
@@ -307,7 +307,7 @@
         <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach(function(e){e.src=e.dataset.tallySrc})};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
       </div>
 
-      <div id="form-body">
+      <div id="form-body" style="display:none">
         <form id="beta-form-el" action="https://formspree.io/f/FORM_ID_HERE" method="POST">
           <input type="hidden" name="_subject" value="AestheticSim Beta Interest" />
 
